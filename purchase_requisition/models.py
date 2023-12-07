@@ -63,7 +63,7 @@ class PurchaseRequisition(models.Model):
 
 
 class PurchaseRequisitionItem(models.Model):
-	requisition_item = models.ForeignKey(
+	requisition = models.ForeignKey(
 		PurchaseRequisition,
 		on_delete=models.PROTECT,
 		null=True,
